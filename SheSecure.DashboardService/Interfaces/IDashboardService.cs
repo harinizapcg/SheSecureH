@@ -1,4 +1,4 @@
-﻿using SheSecure.DashboardService.DTOs;
+using SheSecure.DashboardService.DTOs;
 
 namespace SheSecure.DashboardService.Interfaces
 {
@@ -14,5 +14,11 @@ namespace SheSecure.DashboardService.Interfaces
 
         Task<List<EmergencyAnalyticsDTO>>
             GetEmergencyAnalyticsAsync();
+
+        Task<EmployeeDashboardDTO>
+            GetEmployeeDashboardAsync(string employeeId);
+
+        Task<AdminDashboardDTO>
+            GetAdminDashboardAsync();
     }
 }

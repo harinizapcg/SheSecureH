@@ -1,4 +1,4 @@
-﻿using SheSecure.Safety_WellnessService.DTOs;
+using SheSecure.Safety_WellnessService.DTOs;
 
 namespace SheSecure.Safety_WellnessService.Interfaces
 {
@@ -13,5 +13,7 @@ namespace SheSecure.Safety_WellnessService.Interfaces
         Task<object> GetByIdAsync(int id);
 
         Task EscalateAsync(int id);
+
+        Task<object> GetByEmployeeAsync(string employeeId);
     }
 }

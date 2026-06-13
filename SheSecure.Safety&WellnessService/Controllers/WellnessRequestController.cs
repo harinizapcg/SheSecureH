@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using SheSecure.WellnessSafetyService.DTOs.Requests;
 using SheSecure.WellnessSafetyService.Interfaces;
+using System.Security.Claims;
 
 namespace SheSecure.WellnessSafetyService.Controllers
 {
@@ -54,6 +55,40 @@ namespace SheSecure.WellnessSafetyService.Controllers
             }
 
             return Ok(result);
+        }
+        [HttpGet("my")]
+        public async Task<IActionResult> GetMyRequests([FromQuery] int employeeId)
+        {
+            if (employeeId <= 0)
+                return BadRequest("Invalid employee ID.");
+
+            var result = await _service.GetMyRequestsAsync(employeeId);
+
+            return Ok(result);
+        }
+
+        /// <summary>
+        /// Returns wellness requests belonging to a specific employee.
+        /// Employees call this with their own ID; admins can call with any ID.
+        /// </summary>
+        [HttpGet("by-employee/{employeeId}")]
+        public async Task<IActionResult>
+            GetByEmployee(string employeeId)
+        {
+            if (string.IsNullOrWhiteSpace(employeeId))
+                return BadRequest("employeeId is required.");
+
+            try
+            {
+                var result =
+                    await _service.GetByEmployeeAsync(employeeId);
+
+                return Ok(result);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPut("status")]

@@ -239,6 +239,22 @@
   },
   {
     "ContainingType": "SheSecure.Safety_WellnessService.Controllers.SafeReachController",
+    "Method": "GetByEmployee",
+    "RelativePath": "api/SafeReach/by-employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.Safety_WellnessService.Controllers.SafeReachController",
     "Method": "Create",
     "RelativePath": "api/SafeReach/create",
     "HttpMethod": "POST",
@@ -297,6 +313,22 @@
   },
   {
     "ContainingType": "SheSecure.WellnessSafetyService.Controllers.WellnessRequestController",
+    "Method": "GetByEmployee",
+    "RelativePath": "api/WellnessRequest/by-employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.WellnessSafetyService.Controllers.WellnessRequestController",
     "Method": "CreateRequest",
     "RelativePath": "api/WellnessRequest/create",
     "HttpMethod": "POST",
@@ -307,6 +339,22 @@
         "Name": "dto",
         "Type": "SheSecure.WellnessSafetyService.DTOs.Requests.CreateWellnessRequestDTO",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.WellnessSafetyService.Controllers.WellnessRequestController",
+    "Method": "GetMyRequests",
+    "RelativePath": "api/WellnessRequest/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

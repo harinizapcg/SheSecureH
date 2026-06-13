@@ -75,6 +75,22 @@
   },
   {
     "ContainingType": "SheSecure.ComplaintService.Controllers.ComplaintController",
+    "Method": "GetComplaintsByEmployee",
+    "RelativePath": "api/Complaint/by-employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.ComplaintService.Controllers.ComplaintController",
     "Method": "CreateComplaint",
     "RelativePath": "api/Complaint/create",
     "HttpMethod": "POST",
@@ -192,6 +208,16 @@
   },
   {
     "ContainingType": "SheSecure.DashboardService.Controllers.DashboardController",
+    "Method": "GetAdminDashboard",
+    "RelativePath": "api/Dashboard/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.DashboardService.Controllers.DashboardController",
     "Method": "GetComplaintAnalytics",
     "RelativePath": "api/Dashboard/complaints",
     "HttpMethod": "GET",
@@ -208,6 +234,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.DashboardService.Controllers.DashboardController",
+    "Method": "GetEmployeeDashboard",
+    "RelativePath": "api/Dashboard/employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -438,6 +480,22 @@
   },
   {
     "ContainingType": "SheSecure.NotificationService.Controllers.NotificationController",
+    "Method": "GetNotificationsByEmployee",
+    "RelativePath": "api/Notification/by-employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.NotificationService.Controllers.NotificationController",
     "Method": "Create",
     "RelativePath": "api/Notification/create",
     "HttpMethod": "POST",
@@ -524,6 +582,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.Safety_WellnessService.Controllers.SafeReachController",
+    "Method": "GetByEmployee",
+    "RelativePath": "api/SafeReach/by-employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -616,6 +690,22 @@
   },
   {
     "ContainingType": "SheSecure.WellnessSafetyService.Controllers.WellnessRequestController",
+    "Method": "GetByEmployee",
+    "RelativePath": "api/WellnessRequest/by-employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.WellnessSafetyService.Controllers.WellnessRequestController",
     "Method": "CreateRequest",
     "RelativePath": "api/WellnessRequest/create",
     "HttpMethod": "POST",
@@ -626,6 +716,22 @@
         "Name": "dto",
         "Type": "SheSecure.WellnessSafetyService.DTOs.Requests.CreateWellnessRequestDTO",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.WellnessSafetyService.Controllers.WellnessRequestController",
+    "Method": "GetMyRequests",
+    "RelativePath": "api/WellnessRequest/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

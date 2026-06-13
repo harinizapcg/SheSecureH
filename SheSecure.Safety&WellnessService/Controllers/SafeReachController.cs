@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using SheSecure.Safety_WellnessService.DTOs;
 using SheSecure.Safety_WellnessService.Interfaces;
 
@@ -64,6 +64,30 @@ namespace SheSecure.Safety_WellnessService.Controllers
         {
             return Ok(
                 await _service.GetByIdAsync(id));
+        }
+
+        /// <summary>
+        /// Returns Safe Reach records belonging to a specific employee.
+        /// Employees call this with their own ID; admins can call with any ID.
+        /// </summary>
+        [HttpGet("by-employee/{employeeId}")]
+        public async Task<IActionResult>
+            GetByEmployee(string employeeId)
+        {
+            if (string.IsNullOrWhiteSpace(employeeId))
+                return BadRequest("employeeId is required.");
+
+            try
+            {
+                var result =
+                    await _service.GetByEmployeeAsync(employeeId);
+
+                return Ok(result);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

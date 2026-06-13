@@ -23,16 +23,21 @@ namespace SheSecure.Web.Controllers
         }
 
         // GET — Employee WFH requests
+
         public async Task<IActionResult> Index()
         {
             if (HttpContext.Session.GetString("Token") == null)
                 return RedirectToAction("Login", "Auth");
 
-            var client = GetClient();
+            var employeeId = HttpContext.Session.GetString("UserId") ?? "1";
 
+            // ✅ Add this temporarily to debug
+            ViewBag.DebugEmployeeId = employeeId;
+
+            var client = GetClient();
             try
             {
-                var response = await client.GetStringAsync("api/WellnessRequest/all");
+                var response = await client.GetStringAsync($"api/WellnessRequest/my?employeeId={employeeId}");
                 ViewBag.Requests = JsonDocument.Parse(response).RootElement;
             }
             catch

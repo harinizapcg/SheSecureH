@@ -133,6 +133,28 @@
         }
       }
     },
+    "/api/Complaint/by-employee/{employeeId}": {
+      "get": {
+        "tags": [
+          "Complaint"
+        ],
+        "parameters": [
+          {
+            "name": "employeeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/ComplaintComments/add": {
       "post": {
         "tags": [

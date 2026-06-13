@@ -48,5 +48,35 @@ namespace SheSecure.DashboardService.Controllers
                 await _service
                     .GetEmergencyAnalyticsAsync());
         }
+
+        /// <summary>
+        /// Returns a summary dashboard for a single employee:
+        /// total complaints, wellness requests, safe reach records,
+        /// and unread notifications belonging to that employee.
+        /// </summary>
+        [HttpGet("employee/{employeeId}")]
+        public async Task<IActionResult>
+            GetEmployeeDashboard(string employeeId)
+        {
+            if (string.IsNullOrWhiteSpace(employeeId))
+                return BadRequest("employeeId is required.");
+
+            return Ok(
+                await _service
+                    .GetEmployeeDashboardAsync(employeeId));
+        }
+
+        /// <summary>
+        /// Returns aggregate statistics for admin view:
+        /// total complaints, open complaints, pending wellness,
+        /// safe reach counts, SOS alerts, and notification stats.
+        /// </summary>
+        [HttpGet("admin")]
+        public async Task<IActionResult>
+            GetAdminDashboard()
+        {
+            return Ok(
+                await _service.GetAdminDashboardAsync());
+        }
     }
 }

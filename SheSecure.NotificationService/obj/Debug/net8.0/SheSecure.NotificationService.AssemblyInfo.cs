@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SheSecure.NotificationService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ae17e61df6965f599548f621db73d31ecb5a12d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc7dc4e5b30f36410b1cf3b8f89028b7b1be4485")]
 [assembly: System.Reflection.AssemblyProductAttribute("SheSecure.NotificationService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SheSecure.NotificationService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

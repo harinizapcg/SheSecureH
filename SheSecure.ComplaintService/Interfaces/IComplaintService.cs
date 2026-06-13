@@ -1,4 +1,4 @@
-﻿using SheSecure.ComplaintService.DTOs.Requests;
+using SheSecure.ComplaintService.DTOs.Requests;
 using SheSecure.ComplaintService.DTOs.Responses;
 
 namespace SheSecure.ComplaintService.Interfaces
@@ -16,5 +16,8 @@ namespace SheSecure.ComplaintService.Interfaces
         Task UpdateComplaintStatusAsync(UpdateComplaintStatusDTO dto);
 
         Task AssignComplaintAsync(AssignComplaintDTO dto);
+
+        Task<List<ComplaintResponseDTO>> GetComplaintsByEmployeeAsync(
+            string employeeId);
     }
 }

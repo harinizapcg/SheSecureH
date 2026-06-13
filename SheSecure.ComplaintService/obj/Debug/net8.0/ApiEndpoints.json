@@ -43,6 +43,22 @@
   },
   {
     "ContainingType": "SheSecure.ComplaintService.Controllers.ComplaintController",
+    "Method": "GetComplaintsByEmployee",
+    "RelativePath": "api/Complaint/by-employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.ComplaintService.Controllers.ComplaintController",
     "Method": "CreateComplaint",
     "RelativePath": "api/Complaint/create",
     "HttpMethod": "POST",

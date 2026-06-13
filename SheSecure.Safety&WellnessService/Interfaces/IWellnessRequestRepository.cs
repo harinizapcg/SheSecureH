@@ -11,6 +11,9 @@ namespace SheSecure.WellnessSafetyService.Interfaces
         Task<List<WellnessRequest>>
             GetAllRequestsAsync();
 
+
+        //new
+        Task<List<WellnessRequest>> GetByEmployeeIdAsync(int employeeId);
         Task<WellnessRequest?>
             GetByIdAsync(int id);
 

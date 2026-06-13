@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "SheSecure.NotificationService.Controllers.NotificationController",
+    "Method": "GetNotificationsByEmployee",
+    "RelativePath": "api/Notification/by-employee/{employeeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SheSecure.NotificationService.Controllers.NotificationController",
     "Method": "Create",
     "RelativePath": "api/Notification/create",
     "HttpMethod": "POST",

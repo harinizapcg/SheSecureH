@@ -1,4 +1,4 @@
-﻿using SheSecure.WellnessSafetyService.DTOs.Requests;
+using SheSecure.WellnessSafetyService.DTOs.Requests;
 using SheSecure.WellnessSafetyService.DTOs.Responses;
 
 namespace SheSecure.WellnessSafetyService.Interfaces
@@ -14,6 +14,11 @@ namespace SheSecure.WellnessSafetyService.Interfaces
 
         Task<WellnessRequestResponseDTO?>
             GetByIdAsync(int id);
+        // existing int-based method kept for backward compatibility
+        Task<List<WellnessRequestResponseDTO>> GetMyRequestsAsync(int employeeId);
+
+        // new string-based method aligned with by-employee route pattern
+        Task<List<WellnessRequestResponseDTO>> GetByEmployeeAsync(string employeeId);
 
         Task UpdateStatusAsync(
             UpdateWellnessRequestStatusDTO dto);

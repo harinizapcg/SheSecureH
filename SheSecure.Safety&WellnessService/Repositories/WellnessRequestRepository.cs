@@ -38,6 +38,14 @@ namespace SheSecure.Safety_WellnessService.Repositories
             return await _context.WellnessRequests
                 .FirstOrDefaultAsync(x => x.Id == id);
         }
+        // ✅ ADD THIS METHOD
+        public async Task<List<WellnessRequest>> GetByEmployeeIdAsync(int employeeId)
+        {
+            return await _context.WellnessRequests
+                .Where(x => x.EmployeeId == employeeId)   // 👈 filter here
+                .OrderByDescending(x => x.CreatedAt)
+                .ToListAsync();
+        }
 
         public async Task UpdateRequestAsync(WellnessRequest request)
         {

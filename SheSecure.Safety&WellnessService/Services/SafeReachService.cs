@@ -1,4 +1,4 @@
-﻿//using Hangfire;
+//using Hangfire;
 //using SheSecure.Safety_WellnessService.DTOs;
 //using SheSecure.Safety_WellnessService.Entities;
 //using SheSecure.Safety_WellnessService.Interfaces;
@@ -249,6 +249,16 @@ namespace SheSecure.Safety_WellnessService.Services
                     "Safe Reach record not found");
 
             return check;
+        }
+
+        public async Task<object> GetByEmployeeAsync(
+            string employeeId)
+        {
+            if (!int.TryParse(employeeId, out var empId))
+                throw new ArgumentException(
+                    "employeeId must be a valid integer.");
+
+            return await _repository.GetByEmployeeAsync(empId);
         }
 
         private async Task SendNotificationAsync(

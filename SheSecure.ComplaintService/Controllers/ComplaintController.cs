@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SheSecure.ComplaintService.DTOs.Requests;
 using SheSecure.ComplaintService.Interfaces;
@@ -66,6 +66,23 @@ namespace SheSecure.ComplaintService.Controllers
             await _service.AssignComplaintAsync(dto);
 
             return Ok("Complaint assigned");
+        }
+
+        /// <summary>
+        /// Returns complaints belonging to a specific employee.
+        /// Employees call this with their own ID; admins can call with any ID.
+        /// </summary>
+        [HttpGet("by-employee/{employeeId}")]
+        public async Task<IActionResult> GetComplaintsByEmployee(
+            string employeeId)
+        {
+            if (string.IsNullOrWhiteSpace(employeeId))
+                return BadRequest("employeeId is required.");
+
+            var result = await _service
+                .GetComplaintsByEmployeeAsync(employeeId);
+
+            return Ok(result);
         }
     }
 }

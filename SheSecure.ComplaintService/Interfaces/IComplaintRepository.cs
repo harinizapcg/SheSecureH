@@ -1,4 +1,4 @@
-﻿using SheSecure.ComplaintService.Entities;
+using SheSecure.ComplaintService.Entities;
 
 namespace SheSecure.ComplaintService.Interfaces
 {
@@ -11,5 +11,7 @@ namespace SheSecure.ComplaintService.Interfaces
         Task<Complaint> GetComplaintByIdAsync(int id);
 
         Task UpdateComplaintAsync(Complaint complaint);
+
+        Task<List<Complaint>> GetComplaintsByEmployeeAsync(string employeeId);
     }
 }

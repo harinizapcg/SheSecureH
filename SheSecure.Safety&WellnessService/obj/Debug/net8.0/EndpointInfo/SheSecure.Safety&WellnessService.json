@@ -428,6 +428,28 @@
         }
       }
     },
+    "/api/SafeReach/by-employee/{employeeId}": {
+      "get": {
+        "tags": [
+          "SafeReach"
+        ],
+        "parameters": [
+          {
+            "name": "employeeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/WellnessRequest/create": {
       "post": {
         "tags": [
@@ -484,6 +506,50 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WellnessRequest/my": {
+      "get": {
+        "tags": [
+          "WellnessRequest"
+        ],
+        "parameters": [
+          {
+            "name": "employeeId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WellnessRequest/by-employee/{employeeId}": {
+      "get": {
+        "tags": [
+          "WellnessRequest"
+        ],
+        "parameters": [
+          {
+            "name": "employeeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],

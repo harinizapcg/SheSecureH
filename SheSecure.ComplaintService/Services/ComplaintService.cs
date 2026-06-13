@@ -1,4 +1,4 @@
-﻿//using SheSecure.ComplaintService.DTOs.Requests;
+//using SheSecure.ComplaintService.DTOs.Requests;
 //using SheSecure.ComplaintService.DTOs.Responses;
 //using SheSecure.ComplaintService.Entities;
 //using SheSecure.ComplaintService.Interfaces;
@@ -262,6 +262,24 @@ namespace SheSecure.ComplaintService.Services
 
         private string GenerateComplaintNumber() =>
             $"CMP-{DateTime.UtcNow.Ticks}";
+
+        public async Task<List<ComplaintResponseDTO>>
+            GetComplaintsByEmployeeAsync(string employeeId)
+        {
+            var complaints =
+                await _repository.GetComplaintsByEmployeeAsync(
+                    employeeId);
+
+            return complaints.Select(x =>
+                new ComplaintResponseDTO
+                {
+                    Id = x.Id,
+                    ComplaintNumber = x.ComplaintNumber,
+                    Subject = x.Subject,
+                    Status = x.Status,
+                    CreatedAt = x.CreatedAt
+                }).ToList();
+        }
 
         private async Task SendNotificationAsync(
             string employeeId,

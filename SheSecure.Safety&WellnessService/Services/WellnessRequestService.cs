@@ -1,4 +1,4 @@
-﻿//using SheSecure.WellnessSafetyService.DTOs.Requests;
+//using SheSecure.WellnessSafetyService.DTOs.Requests;
 //using SheSecure.WellnessSafetyService.DTOs.Responses;
 //using SheSecure.WellnessSafetyService.Entities;
 //using SheSecure.WellnessSafetyService.Interfaces;
@@ -235,7 +235,34 @@ namespace SheSecure.WellnessSafetyService.Services
                 $"Your wellness request status has been updated to: {dto.Status}.",
                 "WELLNESS_STATUS_UPDATED");
         }
+        // existing int-based method kept for backward compatibility
+        public async Task<List<WellnessRequestResponseDTO>> GetMyRequestsAsync(int employeeId)
+        {
+            var requests = await _repository.GetByEmployeeIdAsync(employeeId);
 
+            return requests.Select(r => new WellnessRequestResponseDTO
+            {
+                Id = r.Id,
+                EmployeeId = r.EmployeeId,
+                RequestType = r.RequestType,
+                Description = r.Description,
+                Priority = r.Priority,
+                Status = r.Status,
+                AssignedTo = r.AssignedTo,
+                CreatedAt = r.CreatedAt
+            }).ToList();
+        }
+
+        // new string-based method aligned with by-employee route pattern
+        public async Task<List<WellnessRequestResponseDTO>>
+            GetByEmployeeAsync(string employeeId)
+        {
+            if (!int.TryParse(employeeId, out var empId))
+                throw new ArgumentException(
+                    "employeeId must be a valid integer.");
+
+            return await GetMyRequestsAsync(empId);
+        }
         private async Task SendNotificationAsync(
             string employeeId,
             string title,

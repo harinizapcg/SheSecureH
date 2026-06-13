@@ -1,4 +1,4 @@
-﻿using SheSecure.Safety_WellnessService.Entities;
+using SheSecure.Safety_WellnessService.Entities;
 
 namespace SheSecure.Safety_WellnessService.Interfaces
 {
@@ -11,5 +11,7 @@ namespace SheSecure.Safety_WellnessService.Interfaces
         Task<SafeReachCheck?> GetByIdAsync(int id);
 
         Task UpdateAsync(SafeReachCheck check);
+
+        Task<List<SafeReachCheck>> GetByEmployeeAsync(int employeeId);
     }
 }

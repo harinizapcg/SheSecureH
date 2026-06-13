@@ -44,6 +44,24 @@ namespace SheSecure.NotificationService.Controllers
                         employeeId));
         }
 
+        /// <summary>
+        /// Returns notifications belonging to a specific employee.
+        /// Employees call this with their own ID; admins can call with any ID.
+        /// </summary>
+        [HttpGet("by-employee/{employeeId}")]
+        public async Task<IActionResult>
+            GetNotificationsByEmployee(
+                string employeeId)
+        {
+            if (string.IsNullOrWhiteSpace(employeeId))
+                return BadRequest("employeeId is required.");
+
+            return Ok(
+                await _service
+                    .GetEmployeeNotificationsAsync(
+                        employeeId));
+        }
+
         [HttpPut("read/{id}")]
         public async Task<IActionResult>
             MarkAsRead(int id)

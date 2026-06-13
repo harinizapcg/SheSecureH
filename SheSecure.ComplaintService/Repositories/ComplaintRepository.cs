@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SheSecure.ComplaintService.Data;
 using SheSecure.ComplaintService.Entities;
 using SheSecure.ComplaintService.Interfaces;
@@ -39,6 +39,15 @@ namespace SheSecure.ComplaintService.Repositories
             _context.Complaints.Update(complaint);
 
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<Complaint>> GetComplaintsByEmployeeAsync(
+            string employeeId)
+        {
+            return await _context.Complaints
+                .Where(x => x.EmployeeId == employeeId)
+                .OrderByDescending(x => x.CreatedAt)
+                .ToListAsync();
         }
     }
 }
