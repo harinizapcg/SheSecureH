@@ -4254,11 +4254,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.NotificationService\\SheSecure.NotificationService.csproj",
+      "projectUniqueName": "D:\\SheSecure-Microservices-main\\SheSecure.NotificationService\\SheSecure.NotificationService.csproj",
       "projectName": "SheSecure.NotificationService",
-      "projectPath": "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.NotificationService\\SheSecure.NotificationService.csproj",
+      "projectPath": "D:\\SheSecure-Microservices-main\\SheSecure.NotificationService\\SheSecure.NotificationService.csproj",
       "packagesPath": "C:\\Users\\HariniBanda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.NotificationService\\obj\\",
+      "outputPath": "D:\\SheSecure-Microservices-main\\SheSecure.NotificationService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4279,8 +4279,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj": {
-              "projectPath": "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj"
+            "D:\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj": {
+              "projectPath": "D:\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj"
             }
           }
         }

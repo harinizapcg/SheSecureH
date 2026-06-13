@@ -304,3 +304,4 @@ C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Notificati
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.NotificationService\obj\Debug\net8.0\SheSecur.57C752EB.Up2Date
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.NotificationService\obj\Debug\net8.0\SheSecure.NotificationService.genruntimeconfig.cache
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.NotificationService\obj\Debug\net8.0\ref\SheSecure.NotificationService.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.NotificationService\obj\Debug\net8.0\SheSecure.NotificationService.sourcelink.json

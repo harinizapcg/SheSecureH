@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MgUrCIWVSrE=",
+  "dgSpecHash": "x358MvOiDJI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.DashboardService\\SheSecure.DashboardService.csproj",
+  "projectFilePath": "D:\\SheSecure-Microservices-main\\SheSecure.DashboardService\\SheSecure.DashboardService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HariniBanda\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\HariniBanda\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

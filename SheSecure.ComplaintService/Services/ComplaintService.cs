@@ -1,4 +1,117 @@
-﻿using SheSecure.ComplaintService.DTOs.Requests;
+﻿//using SheSecure.ComplaintService.DTOs.Requests;
+//using SheSecure.ComplaintService.DTOs.Responses;
+//using SheSecure.ComplaintService.Entities;
+//using SheSecure.ComplaintService.Interfaces;
+
+//namespace SheSecure.ComplaintService.Services
+//{
+//    public class ComplaintService : IComplaintService
+//    {
+//        private readonly IComplaintRepository _repository;
+//        //private readonly IComplaintStatusHistoryRepository _historyRepository;
+//        public ComplaintService(IComplaintRepository repository)
+//        {
+//            _repository = repository;
+//        }
+
+//        public async Task<ComplaintResponseDTO> CreateComplaintAsync(
+//            CreateComplaintDTO dto,
+//            string employeeId)
+//        {
+//            var complaint = new Complaint
+//            {
+//                EmployeeId = employeeId,
+//                Category = dto.Category,
+//                Subject = dto.Subject,
+//                Description = dto.Description,
+//                Priority = dto.Priority,
+//                IsAnonymous = dto.IsAnonymous,
+//                Status = "Submitted",
+//                ComplaintNumber = GenerateComplaintNumber()
+//            };
+
+//            var createdComplaint =
+//                await _repository.CreateComplaintAsync(complaint);
+
+//            return new ComplaintResponseDTO
+//            {
+//                Id = createdComplaint.Id,
+//                ComplaintNumber = createdComplaint.ComplaintNumber,
+//                Subject = createdComplaint.Subject,
+//                Status = createdComplaint.Status,
+//                CreatedAt = createdComplaint.CreatedAt
+//            };
+//        }
+
+//        public async Task<List<ComplaintResponseDTO>> GetAllComplaintsAsync()
+//        {
+//            var complaints = await _repository.GetAllComplaintsAsync();
+
+//            return complaints.Select(x => new ComplaintResponseDTO
+//            {
+//                Id = x.Id,
+//                ComplaintNumber = x.ComplaintNumber,
+//                Subject = x.Subject,
+//                Status = x.Status,
+//                CreatedAt = x.CreatedAt
+//            }).ToList();
+//        }
+
+//        public async Task<ComplaintResponseDTO> GetComplaintByIdAsync(int id)
+//        {
+//            var complaint = await _repository.GetComplaintByIdAsync(id);
+
+//            if (complaint == null)
+//                throw new Exception("Complaint not found");
+
+//            return new ComplaintResponseDTO
+//            {
+//                Id = complaint.Id,
+//                ComplaintNumber = complaint.ComplaintNumber,
+//                Subject = complaint.Subject,
+//                Status = complaint.Status,
+//                CreatedAt = complaint.CreatedAt
+//            };
+//        }
+
+//        public async Task UpdateComplaintStatusAsync(
+//            UpdateComplaintStatusDTO dto)
+//        {
+//            var complaint =
+//                await _repository.GetComplaintByIdAsync(dto.ComplaintId);
+
+//            if (complaint == null)
+//                throw new Exception("Complaint not found");
+
+//            complaint.Status = dto.Status;
+//            complaint.ResolutionNotes = dto.ResolutionNotes;
+//            complaint.UpdatedAt = DateTime.UtcNow;
+
+//            await _repository.UpdateComplaintAsync(complaint);
+//        }
+
+//        public async Task AssignComplaintAsync(AssignComplaintDTO dto)
+//        {
+//            var complaint =
+//                await _repository.GetComplaintByIdAsync(dto.ComplaintId);
+
+//            if (complaint == null)
+//                throw new Exception("Complaint not found");
+
+//            complaint.AssignedTo = dto.AssignedTo;
+
+//            await _repository.UpdateComplaintAsync(complaint);
+//        }
+
+//        private string GenerateComplaintNumber()
+//        {
+//            return $"CMP-{DateTime.UtcNow.Ticks}";
+//        }
+//    }
+//}
+using System.Text;
+using System.Text.Json;
+using SheSecure.ComplaintService.DTOs.Requests;
 using SheSecure.ComplaintService.DTOs.Responses;
 using SheSecure.ComplaintService.Entities;
 using SheSecure.ComplaintService.Interfaces;
@@ -8,10 +121,17 @@ namespace SheSecure.ComplaintService.Services
     public class ComplaintService : IComplaintService
     {
         private readonly IComplaintRepository _repository;
-        //private readonly IComplaintStatusHistoryRepository _historyRepository;
-        public ComplaintService(IComplaintRepository repository)
+        private readonly HttpClient _http;
+        private readonly ILogger<ComplaintService> _logger;
+
+        public ComplaintService(
+            IComplaintRepository repository,
+            IHttpClientFactory httpFactory,
+            ILogger<ComplaintService> logger)
         {
             _repository = repository;
+            _http = httpFactory.CreateClient("NotificationService");
+            _logger = logger;
         }
 
         public async Task<ComplaintResponseDTO> CreateComplaintAsync(
@@ -30,36 +150,52 @@ namespace SheSecure.ComplaintService.Services
                 ComplaintNumber = GenerateComplaintNumber()
             };
 
-            var createdComplaint =
+            var created =
                 await _repository.CreateComplaintAsync(complaint);
+
+            // Don't notify if anonymous — employee chose not
+            // to be identified
+            if (!dto.IsAnonymous)
+            {
+                await SendNotificationAsync(
+                    employeeId,
+                    "Complaint Submitted",
+                    $"Your complaint ({created.ComplaintNumber}) has been submitted successfully.",
+                    "COMPLAINT_SUBMITTED");
+            }
 
             return new ComplaintResponseDTO
             {
-                Id = createdComplaint.Id,
-                ComplaintNumber = createdComplaint.ComplaintNumber,
-                Subject = createdComplaint.Subject,
-                Status = createdComplaint.Status,
-                CreatedAt = createdComplaint.CreatedAt
+                Id = created.Id,
+                ComplaintNumber = created.ComplaintNumber,
+                Subject = created.Subject,
+                Status = created.Status,
+                CreatedAt = created.CreatedAt
             };
         }
 
-        public async Task<List<ComplaintResponseDTO>> GetAllComplaintsAsync()
+        public async Task<List<ComplaintResponseDTO>>
+            GetAllComplaintsAsync()
         {
-            var complaints = await _repository.GetAllComplaintsAsync();
+            var complaints =
+                await _repository.GetAllComplaintsAsync();
 
-            return complaints.Select(x => new ComplaintResponseDTO
-            {
-                Id = x.Id,
-                ComplaintNumber = x.ComplaintNumber,
-                Subject = x.Subject,
-                Status = x.Status,
-                CreatedAt = x.CreatedAt
-            }).ToList();
+            return complaints.Select(x =>
+                new ComplaintResponseDTO
+                {
+                    Id = x.Id,
+                    ComplaintNumber = x.ComplaintNumber,
+                    Subject = x.Subject,
+                    Status = x.Status,
+                    CreatedAt = x.CreatedAt
+                }).ToList();
         }
 
-        public async Task<ComplaintResponseDTO> GetComplaintByIdAsync(int id)
+        public async Task<ComplaintResponseDTO>
+            GetComplaintByIdAsync(int id)
         {
-            var complaint = await _repository.GetComplaintByIdAsync(id);
+            var complaint =
+                await _repository.GetComplaintByIdAsync(id);
 
             if (complaint == null)
                 throw new Exception("Complaint not found");
@@ -78,7 +214,8 @@ namespace SheSecure.ComplaintService.Services
             UpdateComplaintStatusDTO dto)
         {
             var complaint =
-                await _repository.GetComplaintByIdAsync(dto.ComplaintId);
+                await _repository.GetComplaintByIdAsync(
+                    dto.ComplaintId);
 
             if (complaint == null)
                 throw new Exception("Complaint not found");
@@ -88,12 +225,23 @@ namespace SheSecure.ComplaintService.Services
             complaint.UpdatedAt = DateTime.UtcNow;
 
             await _repository.UpdateComplaintAsync(complaint);
+
+            if (!complaint.IsAnonymous)
+            {
+                await SendNotificationAsync(
+                    complaint.EmployeeId,
+                    "Complaint Status Updated",
+                    $"Your complaint ({complaint.ComplaintNumber}) status has been updated to: {dto.Status}.",
+                    "COMPLAINT_STATUS_UPDATED");
+            }
         }
 
-        public async Task AssignComplaintAsync(AssignComplaintDTO dto)
+        public async Task AssignComplaintAsync(
+            AssignComplaintDTO dto)
         {
             var complaint =
-                await _repository.GetComplaintByIdAsync(dto.ComplaintId);
+                await _repository.GetComplaintByIdAsync(
+                    dto.ComplaintId);
 
             if (complaint == null)
                 throw new Exception("Complaint not found");
@@ -101,11 +249,49 @@ namespace SheSecure.ComplaintService.Services
             complaint.AssignedTo = dto.AssignedTo;
 
             await _repository.UpdateComplaintAsync(complaint);
+
+            if (!complaint.IsAnonymous)
+            {
+                await SendNotificationAsync(
+                    complaint.EmployeeId,
+                    "Complaint Assigned",
+                    $"Your complaint ({complaint.ComplaintNumber}) has been assigned and is being reviewed.",
+                    "COMPLAINT_ASSIGNED");
+            }
         }
 
-        private string GenerateComplaintNumber()
+        private string GenerateComplaintNumber() =>
+            $"CMP-{DateTime.UtcNow.Ticks}";
+
+        private async Task SendNotificationAsync(
+            string employeeId,
+            string title,
+            string message,
+            string type)
         {
-            return $"CMP-{DateTime.UtcNow.Ticks}";
+            try
+            {
+                var payload = JsonSerializer.Serialize(
+                    new { employeeId, title, message, type },
+                    new JsonSerializerOptions
+                    {
+                        PropertyNamingPolicy =
+                            JsonNamingPolicy.CamelCase
+                    });
+
+                await _http.PostAsync(
+                    "api/Notification/create",
+                    new StringContent(
+                        payload,
+                        Encoding.UTF8,
+                        "application/json"));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex,
+                    "Failed to send notification [{Type}] " +
+                    "for employee {EmployeeId}", type, employeeId);
+            }
         }
     }
 }

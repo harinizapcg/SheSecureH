@@ -16,3 +16,9 @@ C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\De
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json

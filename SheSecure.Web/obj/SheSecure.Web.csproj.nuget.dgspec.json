@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj": {}
+    "D:\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj": {
+    "D:\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj",
+        "projectUniqueName": "D:\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj",
         "projectName": "SheSecure.Web",
-        "projectPath": "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj",
+        "projectPath": "D:\\SheSecure-Microservices-main\\SheSecure.Web\\SheSecure.Web.csproj",
         "packagesPath": "C:\\Users\\HariniBanda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HariniBanda\\Downloads\\SheSecure-Microservices-main\\SheSecure.Web\\obj\\",
+        "outputPath": "D:\\SheSecure-Microservices-main\\SheSecure.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -342,3 +342,4 @@ C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Safety&Wel
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Safety&WellnessService\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Safety&WellnessService\bin\Debug\net8.0\SheSecure.Web.dll
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Safety&WellnessService\bin\Debug\net8.0\SheSecure.Web.pdb
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Safety&WellnessService\obj\Debug\net8.0\SheSecure.Safety&WellnessService.sourcelink.json

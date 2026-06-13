@@ -64,6 +64,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             };
     });
 
+builder.Services.AddHttpClient("NotificationService", client =>
+{
+    client.BaseAddress = new Uri(
+        builder.Configuration["NotificationService:BaseUrl"]!);
+});
+
 builder.Services.AddAuthorization();
 
 var app = builder.Build();

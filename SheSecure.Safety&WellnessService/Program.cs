@@ -49,6 +49,13 @@ builder.Services.AddScoped<IMoodLogRepository, MoodLogRepository>();
 builder.Services.AddScoped<IMoodLogService, MoodLogService>();
 builder.Services.AddScoped<SafeReachReminderJob>();
 
+builder.Services.AddHttpClient("NotificationService", client =>
+{
+    client.BaseAddress = new Uri(
+        builder.Configuration["NotificationService:BaseUrl"]!);
+});
+
+
 var app = builder.Build();
 
 app.UseSwagger();

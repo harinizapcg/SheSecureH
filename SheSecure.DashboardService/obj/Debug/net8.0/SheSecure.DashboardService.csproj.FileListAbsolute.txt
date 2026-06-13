@@ -356,3 +356,4 @@ C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.DashboardS
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.DashboardService\bin\Debug\net8.0\SheSecure.Safety&WellnessService.pdb
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.DashboardService\bin\Debug\net8.0\SheSecure.Web.pdb
 C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.DashboardService\bin\Debug\net8.0\SheSecure.AuthService.pdb
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.DashboardService\obj\Debug\net8.0\SheSecure.DashboardService.sourcelink.json
