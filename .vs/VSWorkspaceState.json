@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SheSecure.ComplaintService\\Services",
+    "\\SheSecure.NotificationService",
+    "\\SheSecure.NotificationService\\DTOs",
+    "\\SheSecure.NotificationService\\DTOs\\Requests",
+    "\\SheSecure.NotificationService\\DTOs\\Responses",
+    "\\SheSecure.NotificationService\\Entities",
+    "\\SheSecure.NotificationService\\Interfaces",
+    "\\SheSecure.NotificationService\\Repositories",
+    "\\SheSecure.NotificationService\\Services"
+  ],
+  "SelectedNode": "\\SheSecure.NotificationService\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

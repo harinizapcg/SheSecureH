@@ -1,0 +1,93 @@
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\appsettings.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.staticwebassets.runtime.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.staticwebassets.endpoints.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.exe
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.deps.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.runtimeconfig.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.pdb
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.AssemblyInfoInputs.cache
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.AssemblyInfo.cs
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.csproj.CoreCompileInputs.cache
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.RazorAssemblyInfo.cache
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.RazorAssemblyInfo.cs
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.sourcelink.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\scopedcss\bundle\SheSecure.Web.styles.css
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\scopedcss\projectbundle\SheSecure.Web.bundle.scp.css
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\refint\SheSecure.Web.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.pdb
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.genruntimeconfig.cache
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\ref\SheSecure.Web.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.csproj.AssemblyReference.cache
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HariniBanda\OneDrive - ZapCom Solutions Pvt. ltd\Desktop\POC_2\SheSecure.Web\obj\Debug\net8.0\SheSecur.68DD1820.Up2Date
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\appsettings.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.staticwebassets.runtime.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.staticwebassets.endpoints.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.exe
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.deps.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.runtimeconfig.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\SheSecure.Web.pdb
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.csproj.AssemblyReference.cache
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.AssemblyInfoInputs.cache
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.AssemblyInfo.cs
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.csproj.CoreCompileInputs.cache
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.RazorAssemblyInfo.cache
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.RazorAssemblyInfo.cs
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\scopedcss\bundle\SheSecure.Web.styles.css
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\scopedcss\projectbundle\SheSecure.Web.bundle.scp.css
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecur.68DD1820.Up2Date
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\refint\SheSecure.Web.dll
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.pdb
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\SheSecure.Web.genruntimeconfig.cache
+C:\Users\HariniBanda\Downloads\SheSecure-Microservices-main\SheSecure.Web\obj\Debug\net8.0\ref\SheSecure.Web.dll
